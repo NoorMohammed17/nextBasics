@@ -1,11 +1,18 @@
-import React from 'react'
+import React,{Fragment} from "react";
+import { useRouter } from "next/router";
+
 
 const DetailPage = () => {
+  const router = useRouter();
+  const newsId = router.query.newsId;
+
+  //console.log(router.query.newsId)
   return (
-    <div>
+    <Fragment>
       <h1>Welcome to Detail Page!</h1>
-    </div>
-  )
-}
+     
+    </Fragment>
+  );
+};
 
 export default DetailPage;

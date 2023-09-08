@@ -1,10 +1,19 @@
-import React from 'react'
+import React,{Fragment} from "react";
+
+import Link from 'next/Link';
 
 const NewsPage = () => {
   return (
-    <div>
-      <h1>Welcome to News Page!</h1>
-    </div>
+    <Fragment>
+    <h1>Welcome to News Page!</h1>
+    <ul>
+      <li>
+          <Link href='/news/detailpage'>
+          to detail page
+          </Link></li>
+      <li>to someother page</li>
+    </ul>
+  </Fragment>
   )
 }
 
